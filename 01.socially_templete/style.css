@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(img/back-image.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+.log_in {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  background-image: linear-gradient(45deg, #de4558, #c430d7);
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
+
+h1.title {
+  font-size: 70px;
+  color: #222;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: #333;
+  animation-delay: 0.5s;
+}
+
+.content .btn {
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  border-top-right-radius: 30px;
+}
+.heroImg {
+  width: 530px;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  right: 7%;
+  height: 85vh;
+}
+.heroImg.animated {
+  animation-delay: 1.5s;
+}
+
+.animated {
+  opacity: 0;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+  -webkit-animation: moveup 0.5s linear for;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
